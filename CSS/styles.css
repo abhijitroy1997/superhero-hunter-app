@@ -279,7 +279,7 @@ input::placeholder {
 @media screen and (max-width: 576px) {
 
      #search-bar {
-          min-width: 200px;
+          min-width: 150px;
      }
 
      .navbar {

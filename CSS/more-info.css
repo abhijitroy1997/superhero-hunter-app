@@ -56,7 +56,7 @@ body {
      z-index: -1;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 576px) {
      .hero-img-and-more-info{
           flex-direction: column;
           align-items: center;
@@ -73,11 +73,17 @@ body {
      #landscapeImage{
           width:100%;
           border-radius: 26px 6px;
+          padding-top: 10px;
      }
      .info{
-          height: 100vh;
+          height: auto;
+          align-items:normal;
+          margin-top: 10px;
+          
+
      }
      .more-info{
           gap: 0px;
      }
+
 }

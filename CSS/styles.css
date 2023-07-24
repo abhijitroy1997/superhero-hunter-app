@@ -4,7 +4,7 @@
      box-sizing: border-box;
 }
 
-:root{
+:root {
      --background-color: rgba(0, 0, 0, 0.786);
      --navbar-background-color: #2d2b2bec;
      --navbar-color: #1390deeb;
@@ -50,7 +50,7 @@ body {
      gap: 10px;
 }
 
-.navbar-brand a{
+.navbar-brand a {
      text-decoration: none;
      color: var(--navbar-color);
 }
@@ -68,7 +68,7 @@ body {
      gap: 10px;
 }
 
-.link-to-different-page{
+.link-to-different-page {
      justify-content: center;
      text-decoration: none;
 }
@@ -81,7 +81,7 @@ body {
      border-radius: 3px;
      color: #fff;
      height: 40px;
-     font-size: 16px;
+     font-size: 1rem;
 }
 
 .fav-btn {
@@ -160,7 +160,7 @@ input::placeholder {
      height: auto;
      box-sizing: border-box;
      margin-left: 0px;
-     
+
 }
 
 
@@ -182,7 +182,7 @@ input::placeholder {
      color: white;
      width: 100%;
      margin: 10px;
-     border-radius: 5px 30px 30px 5px;
+     border-radius: 5px 50px 5px 5px;
      border: none;
      overflow: hidden;
 }
@@ -277,18 +277,24 @@ input::placeholder {
 /* ------------------------------------------------Media Queries for different screen sizes ----------------------------- */
 
 @media screen and (max-width: 576px) {
-
+     
      #search-bar {
-          min-width: 150px;
+          font-size: 20px;
+          min-width: 200px;
+          width: 40%;
      }
+
+     #search-bar::placeholder {
+          font-size: 15px;
+      }
 
      .navbar {
           flex-direction: column;
           gap: 10px;
           padding: 10px 0;
           /* height: 30%; */
-     }
 
+     }
      .navbar-brand {
           display: flex;
           flex-direction: column;
@@ -297,10 +303,46 @@ input::placeholder {
 
      .navbar-brand span {
           margin-top: -35px;
+          font-size: 30px;
      }
 
      .logo {
           width: 25%;
           min-width: 45px;
      }
+     .bg-img {
+        width: 90%;
+        min-width: 350px;
+     }
+     .btn {
+          width: auto;
+          font-size: 0.8rem;
+          padding: 8px;
+          margin: auto;
+          border-radius: 8px;
+     }
+
+     #search-results {
+          min-width: 350px;
+          /* height: 500px; */
+          margin-top: 30px;
+          padding: auto;
+          list-style: none;
+          z-index: 2;
+          backdrop-filter: blur(4px);
+          /* overflow-y: scroll; */
+     
+     }
+     #search-results li {
+          width: 95%;
+     }
+     #search-results li .hero-name {
+          font-size: 15px; 
 }
+.add-to-fav-btn{
+     min-width: 150px;
+}
+
+}
+
+

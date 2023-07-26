@@ -1,13 +1,3 @@
-// Your public key
-// 1783146bf07aebe454dbbd573615d8a3
-
-// Your private key
-// 1e22e78c62751b3c115b69a2b933c2cfdf30cda6
-
-// hash
-// 11e22e78c62751b3c115b69a2b933c2cfdf30cda61783146bf07aebe454dbbd573615d8a3
-// md5(hash) = 8bbda1c385b2a5590c1216a3546e7a5d
-
 //*-------------------------------------- Selecting the element from DOM ----------------------------------------------------
 let searchBar = document.getElementById("search-bar");
 let searchResults = document.getElementById("search-results");
@@ -19,7 +9,6 @@ searchBar.addEventListener("input", () => searchHeros(searchBar.value));
 async function searchHeros(textSearched) {
 
      // let PUBLIC_KEY = "1783146bf07aebe454dbbd573615d8a3";
-     // let PRIVATE_KEY = "1e22e78c62751b3c115b69a2b933c2cfdf30cda6";
 
      // let ts = new Date().getTime();
      // let hash = CryptoJS.MD5(ts + PRIVATE_KEY + PUBLIC_KEY).toString();
